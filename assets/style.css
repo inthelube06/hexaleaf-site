@@ -1,0 +1,27 @@
+:root{--bg:#fbfaf7;--card:rgba(255,255,255,.72);--text:#1c1a17;--muted:#6b665e;--accent:#2f9e5b;--accent-ink:#1f7a43;--line:rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0e0c;--card:rgba(40,37,33,.6);--text:#f4f1ea;--muted:#a8a197;--accent:#4cc47b;--accent-ink:#6fd396;--line:rgba(255,255,255,.1)}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent-ink)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header.site{position:sticky;top:0;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--line);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-weight:700;text-decoration:none;color:var(--text);display:flex;gap:8px;align-items:center}
+.brand .logo{width:22px;height:22px}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:15px}nav a:hover{color:var(--text)}
+.hero{text-align:center;padding:72px 0 40px}
+.hero h1{font-size:clamp(40px,8vw,64px);line-height:1.05;margin:0 0 12px;letter-spacing:-.02em}
+.tag{font-size:21px;color:var(--muted);margin:0 0 24px}
+blockquote{margin:24px auto;max-width:560px;font-style:italic;color:var(--muted)}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:32px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+main.doc{padding:40px 0 24px}main.doc h1{font-size:36px;letter-spacing:-.01em;margin-bottom:4px}
+main.doc h2{font-size:21px;margin-top:32px}.meta{color:var(--muted);font-size:15px}
+table{border-collapse:collapse;width:100%;font-size:15px}td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left}
+mark.todo{background:#ffe08a;color:#1c1a17;border-radius:4px;padding:0 4px}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0 40px;color:var(--muted);font-size:13px}
+footer a{color:var(--muted);margin-right:14px}
